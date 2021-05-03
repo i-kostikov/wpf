@@ -484,7 +484,7 @@ namespace Microsoft.Build.Tasks.Windows
         //
         // return value:
         //
-        //    If cache doesn't exist, or both LocalAppDef and LocallXaml Pages do not exist, return false
+        //    If cache doesn't exist, or both LocalAppDef and LocalXaml Pages do not exist, return false
         //    to indicate no further work required.
         //    otherwise, return true.
         //
@@ -602,8 +602,8 @@ namespace Microsoft.Build.Tasks.Windows
             }
 
             //
-            // Generate the asmmebly reference list.
-            // The temporay target assembly should have been added into Reference list from target file.
+            // Generate the assembly reference list.
+            // The temporary target assembly should have been added into Reference list from target file.
             //
             if (References != null && References.Length > 0)
             {
